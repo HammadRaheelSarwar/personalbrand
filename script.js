@@ -83,6 +83,10 @@ form.addEventListener('submit', e => {
     window.location.href = `mailto:zulqarnainrapidmove@gmail.com?subject=New Automation Inquiry from ${encodeURIComponent(name)}&body=${encodedBody}`;
   };
 
+  document.getElementById('btnCalendar').onclick = () => {
+    window.open('https://calendly.com/zulqarnainmughal557/30min?month=2026-05', '_blank', 'noopener');
+  };
+
   const btn = document.getElementById('ctaSubmitBtn');
   btn.textContent = 'Processing…';
   btn.disabled    = true;
